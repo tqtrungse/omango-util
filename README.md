@@ -1,4 +1,4 @@
-# Util-RS
+# Omango-Util
 
 This is a utilities crate for [omango](https://github.com/tqtrungse/omango) library .<br />
 
@@ -13,7 +13,7 @@ This is a utilities crate for [omango](https://github.com/tqtrungse/omango) libr
 Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
-omango-util-rs = "0.1.1"
+omango-util = "0.1.0"
 ```
 
 ## Compatibility

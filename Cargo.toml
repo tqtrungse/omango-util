@@ -1,13 +1,13 @@
 [package]
-name = "omango-util-rs"
-version = "0.1.1"
+name = "omango-util"
+version = "0.1.0"
 authors = ["Trung Tran <tqtrungse@gmail.com>"]
 edition = "2021"
 description = "Utililites for omango library"
 license = "MIT"
-repository = "https://github.com/tqtrungse/util-rs"
-homepage = "https://github.com/tqtrungse/util-rs"
-documentation = "https://docs.rs/util-rs"
+repository = "https://github.com/tqtrungse/omango-util"
+homepage = "https://github.com/tqtrungse/omango-util"
+documentation = "https://docs.rs/omango-util"
 keywords = ["cpu-cacheline", "backoff", "hint"]
 categories = ["data-structures"]
 

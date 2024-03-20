@@ -1,5 +1,5 @@
 [package]
-name = "util-rs"
+name = "omango-util-rs"
 version = "0.1.0"
 authors = ["Trung Tran <tqtrungse@gmail.com>"]
 edition = "2021"

@@ -1,13 +1,13 @@
 [package]
 name = "omango-util"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Trung Tran <tqtrungse@gmail.com>"]
 edition = "2021"
-description = "Utililites for omango library"
+description = "Utililites"
 license = "MIT"
 repository = "https://github.com/tqtrungse/omango-util"
 homepage = "https://github.com/tqtrungse/omango-util"
 documentation = "https://docs.rs/omango-util"
-keywords = ["cpu-cacheline", "backoff", "hint"]
+keywords = ["cpu-cacheline", "backoff", "hint", "spinlock"]
 categories = ["data-structures"]
 

@@ -48,12 +48,12 @@ use core::ops::{Deref, DerefMut};
 // - https://github.com/golang/go/blob/3dd58676054223962cd915bb0934d1f9f489d4d2/src/internal/cpu/cpu_ppc64x.go#L9
 // - https://github.com/torvalds/linux/blob/3516bd729358a2a9b090c1905bd2a3fa926e24c6/arch/powerpc/include/asm/cache.h#L26
 #[cfg_attr(
-any(
-target_arch = "x86_64",
-target_arch = "aarch64",
-target_arch = "powerpc64",
-),
-repr(align(128))
+    any(
+        target_arch = "x86_64",
+        target_arch = "aarch64",
+        target_arch = "powerpc64",
+    ),
+    repr(align(128))
 )]
 
 // arm, mips, mips64, sparc, and hexagon have 32-byte cache line size.
@@ -66,16 +66,16 @@ repr(align(128))
 // - https://github.com/torvalds/linux/blob/3516bd729358a2a9b090c1905bd2a3fa926e24c6/arch/sparc/include/asm/cache.h#L17
 // - https://github.com/torvalds/linux/blob/3516bd729358a2a9b090c1905bd2a3fa926e24c6/arch/hexagon/include/asm/cache.h#L12
 #[cfg_attr(
-any(
-target_arch = "arm",
-target_arch = "mips",
-target_arch = "mips32r6",
-target_arch = "mips64",
-target_arch = "mips64r6",
-target_arch = "sparc",
-target_arch = "hexagon",
-),
-repr(align(32))
+    any(
+        target_arch = "arm",
+        target_arch = "mips",
+        target_arch = "mips32r6",
+        target_arch = "mips64",
+        target_arch = "mips64r6",
+        target_arch = "sparc",
+        target_arch = "hexagon",
+    ),
+    repr(align(32))
 )]
 
 // m68k has 16-byte cache line size.
@@ -100,21 +100,21 @@ repr(align(32))
 //
 // All others are assumed to have 64-byte cache line size.
 #[cfg_attr(
-not(any(
-target_arch = "x86_64",
-target_arch = "aarch64",
-target_arch = "powerpc64",
-target_arch = "arm",
-target_arch = "mips",
-target_arch = "mips32r6",
-target_arch = "mips64",
-target_arch = "mips64r6",
-target_arch = "sparc",
-target_arch = "hexagon",
-target_arch = "m68k",
-target_arch = "s390x",
-)),
-repr(align(64))
+    not(any(
+        target_arch = "x86_64",
+        target_arch = "aarch64",
+        target_arch = "powerpc64",
+        target_arch = "arm",
+        target_arch = "mips",
+        target_arch = "mips32r6",
+        target_arch = "mips64",
+        target_arch = "mips64r6",
+        target_arch = "sparc",
+        target_arch = "hexagon",
+        target_arch = "m68k",
+        target_arch = "s390x",
+    )),
+    repr(align(64))
 )]
 /// Aligns an object size to CPU cache line size to prevent false-sharing.
 pub struct CachePadded<T> {

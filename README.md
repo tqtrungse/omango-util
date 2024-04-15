@@ -1,6 +1,11 @@
 # Omango-Util
 
-This is a utilities crate for [omango](https://github.com/tqtrungse/omango) library .<br />
+This is an utilities crate.<br />
+
+- [Hint](src/hint.rs): support `likely` and `unlikely`.
+- [Backoff](src/backoff.rs): retry with support reduce CPU cache coherence.
+- [CachePadded](src/cache_padded.rs): aligns CPU cache line for types.
+- [SpinLock](src/lock.rs): concurrent thread safe locking for the fast changes.
 
 ## Table of Contents
 
@@ -13,12 +18,12 @@ This is a utilities crate for [omango](https://github.com/tqtrungse/omango) libr
 Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
-omango-util = "0.1.0"
+omango-util = "0.1.1"
 ```
 
 ## Compatibility
 
-The minimum supported Rust version is 1.49.
+The minimum supported Rust version is `1.49`.
 
 ## License
 

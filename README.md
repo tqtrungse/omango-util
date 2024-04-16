@@ -6,6 +6,7 @@ This is an utilities crate.<br />
 - [Backoff](src/backoff.rs): retry with support reduce CPU cache coherence.
 - [CachePadded](src/cache_padded.rs): aligns CPU cache line for types.
 - [SpinLock](src/lock.rs): concurrent thread safe locking for the fast changes.
+- [Any](src/any.rs): wraps `std::any` with useful functions to cast to the original type.
 
 ## Table of Contents
 
@@ -18,7 +19,7 @@ This is an utilities crate.<br />
 Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
-omango-util = "0.1.1"
+omango-util = "0.1.2"
 ```
 
 ## Compatibility

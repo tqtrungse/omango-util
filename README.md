@@ -19,7 +19,7 @@ This is an utilities crate.<br />
 Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
-omango-util = "0.1.3"
+omango-util = "0.1.4"
 ```
 
 ## Compatibility

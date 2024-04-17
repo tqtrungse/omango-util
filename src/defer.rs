@@ -4,7 +4,7 @@ pub struct Defer<F: FnOnce()> {
 
 impl<F: FnOnce()> Defer<F> {
     #[inline(always)]
-    fn new(f: F) -> Defer<F> {
+    pub fn new(f: F) -> Defer<F> {
         Defer { f: Some(f) }
     }
 }

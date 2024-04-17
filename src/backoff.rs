@@ -46,7 +46,7 @@ pub struct Backoff {
 }
 
 impl Backoff {
-    #[inline]
+    #[inline(always)]
     pub fn reset(&self) {
         self.step.set(0);
     }
@@ -113,7 +113,7 @@ impl Backoff {
 }
 
 impl Default for Backoff {
-    #[inline]
+    #[inline(always)]
     fn default() -> Backoff {
         Self {
             step: Cell::new(0)

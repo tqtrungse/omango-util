@@ -43,7 +43,7 @@ mod test {
     fn test() {
         fn defer() {
             let a = 4u32;
-            crate::defer::Defer::new(|| {
+            let _df = crate::defer::Defer::new(|| {
                 assert_eq!(1u32, a);
             });
         }

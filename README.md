@@ -19,12 +19,12 @@ This is an utilities crate.<br />
 Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
-omango-util = "0.1.4"
+omango-util = "0.1.5"
 ```
 
 ## Compatibility
 
-The minimum supported Rust version is `1.49`.
+The minimum supported Rust version is `1.57`.
 
 ## License
 

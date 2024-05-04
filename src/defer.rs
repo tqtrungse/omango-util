@@ -38,6 +38,7 @@ impl<F: FnOnce()> Drop for Defer<F> {
     }
 }
 
+#[cfg(test)]
 mod test {
     #[test]
     fn test() {

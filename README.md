@@ -5,7 +5,7 @@ This is an utilities crate.<br />
 - [Hint](src/hint.rs): support `likely` and `unlikely`.
 - [Backoff](src/backoff.rs): retry with support reduce CPU cache coherence.
 - [CachePadded](src/cache_padded.rs): aligns CPU cache line for types.
-- [SpinLock](src/lock.rs): concurrent thread safe locking for the fast changes.
+- [RwSpinLock](src/lock.rs): concurrent thread safe read-write locking for the fast changes.
 - [Defer](src/defer.rs): support `Golang's defer`.
 
 ## Table of Contents
@@ -19,7 +19,7 @@ This is an utilities crate.<br />
 Add this to your `Cargo.toml`:
 ```toml
 [dependencies]
-omango-util = "0.1.5"
+omango-util = "0.1.6"
 ```
 
 ## Compatibility
